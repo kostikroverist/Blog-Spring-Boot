@@ -1,5 +1,5 @@
-#Blog Spring-Boot
-##Guidelines
+# Blog Spring-Boot
+## Guidelines
 Run the blog application
 
 
@@ -17,7 +17,7 @@ and
 ```
 mvn spring-boot:run
 ```
-##Postman
+## Postman
 - First  url POST http://localhost:8080/authenticate  
 in this url we must login user and paste in the body.raw.json
  ```
