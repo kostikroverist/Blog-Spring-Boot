@@ -25,12 +25,12 @@ public class UserRestController {
         return userService.findByName(name);
     }
 
-    @GetMapping("/test")
+    @GetMapping("/findMoreArticles")
     public List<String> findMoreThreeArticles() {
         return userService.findMoreThreeArticles();
     }
 
-    @GetMapping("/test/{name}")
+    @GetMapping("/findColor/{name}")
     public List<UserEntity> findbyColor(@PathVariable(name = "name")String name ) {
         return userService.findByColor(name);
     }
@@ -40,7 +40,7 @@ public class UserRestController {
         return userService.findOlderUser(age);
     }
 
-    @PostMapping
+    @PostMapping("/saveUser")
     public UserEntity save (@RequestBody UserEntity users){
         return userService.save(users);
     }
